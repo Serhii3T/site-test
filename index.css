@@ -2595,18 +2595,8 @@ svg {
   background-position: center center;
   min-height: 550px;
 }
-@media (max-width: 479px) {
-  .c-banner {
-    background-position: 0px 0px, 80% 50%;
-  }
-}
 .c-banner__wrapper {
   margin: 130px auto 0 auto;
-}
-@media (max-width: 767px) {
-  .c-banner__wrapper {
-    flex-direction: column;
-  }
 }
 @media (max-width: 479px) {
   .c-banner__wrapper {
@@ -2616,6 +2606,11 @@ svg {
 }
 .c-banner__wrapper--logo-mode {
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .c-banner__wrapper--logo-mode {
+    flex-direction: column;
+  }
 }
 .c-banner__wrapper--width-mode .c-banner__info {
   max-width: 535px;
@@ -2823,7 +2818,7 @@ svg {
 }
 .c-section-advantages__wrapper {
   max-width: 1095px;
-  margin: 0px auto;
+  margin: 20px auto;
 }
 .c-section-advantages__header {
   position: relative;

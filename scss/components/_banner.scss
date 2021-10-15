@@ -2,16 +2,8 @@
   @include backgroundCoverCenter;
   min-height: 550px;
   
-  @include media ('<phone') {
-    background-position: 0px 0px, 80% 50%;
-  }
-  
   &__wrapper {
     margin: 130px auto 0 auto;
-
-    @include media ('<tablet') {
-      flex-direction: column;
-    }
 
     @include media ('<phone'){
       margin: 230px auto 50px auto;
@@ -20,6 +12,10 @@
 
     &--logo-mode {
       justify-content: space-between;
+
+      @include media ('<tablet') {
+        flex-direction: column;
+      }
     }
 
     &--width-mode {
